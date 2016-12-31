@@ -617,7 +617,7 @@ $(function(){
 			center:true,
 			width: 395,
 			height:130,
-			backgroundImage:'img/face_logo.png',
+			backgroundImage:'images/face_logo.png',
 			css:{
 				opacity:0,
 				top:0
@@ -630,7 +630,7 @@ $(function(){
 			center:true,
 			width: 364,
 			height:100,
-			backgroundImage:'img/face_slogan.png',
+			backgroundImage:'images/face_slogan.png',
 			css:{
 				opacity:0,
 				top:'37%'
@@ -643,7 +643,7 @@ $(function(){
 			type:'base',
 			width: 370,
 			height: 493,
-			backgroundImage:'img/face_img_left.png',
+			backgroundImage:'images/face_img_left.png',
 			css:{
 				opacity:0,
 				bottom:-50,
@@ -657,7 +657,7 @@ $(function(){
 			type:'base',
 			width: 276,
 			height: 449,
-			backgroundImage:'img/face_img_right.png',
+			backgroundImage:'images/face_img_right.png',
 			css:{
 				opacity:0,
 				bottom:-50,
@@ -695,7 +695,7 @@ $(function(){
 			center:true,
 			width:521,
 			height:335,
-			backgroundImage:'img/description_bg.gif',
+			backgroundImage:'images/description_bg.gif',
 			css:{
 				top:'15%',
 				opacity:0,
@@ -712,7 +712,7 @@ $(function(){
 			center:true,
 			width:515,
 			height:305,
-			backgroundImage:'img/p1_people.png',
+			backgroundImage:'images/p1_people.png',
 			css:{
 				opacity:0,
 				bottom:0
@@ -1064,7 +1064,7 @@ $(function(){
 			center:true,
 			width:398,
 			height:90,
-			backgroundImage:'img/tail_logo.png',
+			backgroundImage:'images/tail_logo.png',
 			css:{
 				opacity:0,
 				top:'15.5%'
@@ -1077,7 +1077,7 @@ $(function(){
 			center:true,
 			width:183,
 			height:50,
-			backgroundImage:'img/tail_slogan.png',
+			backgroundImage:'images/tail_slogan.png',
 			css:{
 				opacity:0,
 				top:'30.3%'
@@ -1090,7 +1090,7 @@ $(function(){
 			type:'base',
 			width:128,
 			height:120,
-			backgroundImage:'img/tail_share.png',
+			backgroundImage:'images/tail_share.png',
 			css:{
 				opacity:0,
 				top:'2%',
@@ -1105,7 +1105,7 @@ $(function(){
 			center:true,
 			width:52,
 			height:50,
-			backgroundImage:'img/tail_back.png',
+			backgroundImage:'images/tail_back.png',
 			css:{
 				opacity:0,
 				top:'-2%'
@@ -1118,18 +1118,18 @@ $(function(){
 			}
 		})
 	
-	.loader([ 'img/tail_slogan.png',
-			  'img/tail_share.png',
-			  'img/tail_back.png',
-			  'img/page_bg.png',
-			  'img/page-title.png',
-			  'img/p1_people.png',
-			  'img/face_slogan.png',
-			  'img/face_logo.png',
-			  'img/face_img_right.png',
-			  'img/face_img_left.png',
-			  'img/face_bg.png',
-			  'img/description_bg.gif'
+	.loader([ 'images/tail_slogan.png',
+			  'images/tail_share.png',
+			  'images/tail_back.png',
+			  'images/page_bg.png',
+			  'images/page-title.png',
+			  'images/p1_people.png',
+			  'images/face_slogan.png',
+			  'images/face_logo.png',
+			  'images/face_img_right.png',
+			  'images/face_img_left.png',
+			  'images/face_bg.png',
+			  'images/description_bg.gif'
 			]);
 
 

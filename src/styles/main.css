@@ -6,9 +6,9 @@ body{margin: 0;padding: 0;font-size: 12px;}
 
 
 /*H5-page区域*/
-.h5-page{position: relative;background: url('../img/page_bg.png')no-repeat;background-size: 100% 100%;}
-.h5-c-name-title{background-image: url('../img/page-title.png');width: 250px;height: 62px;line-height: 45px;font-size: 20px;color: #fff;text-align: center;font-weight: bold;}
-.h5-page-face{background-image: url('../img/face_bg.png');}
+.h5-page{position: relative;background: url('../images/page_bg.png')no-repeat;background-size: 100% 100%;}
+.h5-c-name-title{background-image: url('../images/page-title.png');width: 250px;height: 62px;line-height: 45px;font-size: 20px;color: #fff;text-align: center;font-weight: bold;}
+.h5-page-face{background-image: url('../images/face_bg.png');}
 .h5-page-face .h5-c-name-slogan,.h5-page-tail .h5-c-name-slogan{animation: rock 2s infinite 2s;-webkit-animation: rock 2s infinite 2s;}		
 @keyframes rock{
 	0%{-ms-transform: rotate(0deg);transform: rotate(0deg);}

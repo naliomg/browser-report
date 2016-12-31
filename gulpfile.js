@@ -8,7 +8,7 @@ var imagemin = require('gulp-imagemin'); //图片压缩
 //注册样式编译任务
 gulp.task('style', function() {
     gulp.src('src/styles/*.css')
-        .pipe(autoprefixer(browsers: [
+        .pipe(autoprefixer({browsers: [
             "ie >= 8",
             "ie_mob >= 10",
             "ff >= 26",
@@ -18,8 +18,8 @@ gulp.task('style', function() {
             "ios >= 5",
             "android >= 2.3",
             "bb >= 10"
-        ]))
-        .pipe(cssnano)
+        ]}))
+        .pipe(cssnano())
         .pipe(gulp.dest('dist/styles'));
 });
 gulp.task('image', function() {
@@ -47,8 +47,8 @@ gulp.task('html', function() {
 });
 //监听文档
 gulp.task('serve', ['style', 'image', 'script', 'html'], function() {
-    gulp.watch('src/styles/*.css',['style']);
-    gulp.watch('src/images/*.*',['image']);
-    gulp.watch('src/scripts/*.js',['script']);
-    gulp.watch('src/*.html',['html']);
+    gulp.watch('src/styles/*.css', ['style']);
+    gulp.watch('src/images/*.*', ['image']);
+    gulp.watch('src/scripts/*.js', ['script']);
+    gulp.watch('src/*.html', ['html']);
 });
