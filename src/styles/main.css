@@ -1,0 +1,142 @@
+
+
+/*页面CSS定义*/
+body{margin: 0;padding: 0;font-size: 12px;}
+.section{}
+
+
+/*H5-page区域*/
+.h5-page{position: relative;background: url('../img/page_bg.png')no-repeat;background-size: 100% 100%;}
+.h5-c-name-title{background-image: url('../img/page-title.png');width: 250px;height: 62px;line-height: 45px;font-size: 20px;color: #fff;text-align: center;font-weight: bold;}
+.h5-page-face{background-image: url('../img/face_bg.png');}
+.h5-page-face .h5-c-name-slogan,.h5-page-tail .h5-c-name-slogan{animation: rock 2s infinite 2s;-webkit-animation: rock 2s infinite 2s;}		
+@keyframes rock{
+	0%{-ms-transform: rotate(0deg);transform: rotate(0deg);}
+	5%{-ms-transform: rotate(3deg);transform: rotate(3deg);}
+	10%{-ms-transform: rotate(-4deg);transform: rotate(-4deg);}
+	15%{-ms-transform: rotate(3deg);transform: rotate(3deg);}
+	20%{-ms-transform: rotate(-2deg);transform: rotate(-2deg);}
+	25%{-ms-transform: rotate(1deg);transform: rotate(1deg);}
+	25%{-ms-transform: rotate(-1deg);transform: rotate(-1deg);}
+	70%{-ms-transform: rotate(0deg);transform: rotate(0deg);}
+	100%{-ms-transform: rotate(0deg);transform: rotate(0deg);}
+}
+@-webkit-keyframes rock{
+	0%{-webkit-transform: rotate(0deg);}
+	5%{-webkit-transform: rotate(3deg);}
+	10%{-webkit-transform: rotate(-4deg);}
+	15%{-webkit-transform: rotate(3deg);}
+	20%{-webkit-transform: rotate(-2deg);}
+	25%{-webkit-transform: rotate(1deg);}
+	25%{-webkit-transform: rotate(-1deg);}
+	70%{-webkit-transform: rotate(0deg);}
+	100%{-webkit-transform: rotate(0deg);}
+}
+@-moz-keyframes rock{
+	0%{transform: rotate(0deg);}
+	5%{transform: rotate(3deg);}
+	10%{transform: rotate(-4deg);}
+	15%{transform: rotate(3deg);}
+	20%{transform: rotate(-2deg);}
+	25%{transform: rotate(1deg);}
+	25%{transform: rotate(-1deg);}
+	70%{transform: rotate(0deg);}
+	100%{transform: rotate(0deg);}
+}
+@-o-keyframes rock{
+	0%{-o-transform: rotate(0deg);}
+	5%{-o-transform: rotate(3deg);}
+	10%{-o-transform: rotate(-4deg);}
+	15%{-o-transform: rotate(3deg);}
+	20%{-o-transform: rotate(-2deg);}
+	25%{-o-transform: rotate(1deg);}
+	25%{-o-transform: rotate(-1deg);}
+	70%{-o-transform: rotate(0deg);}
+	100%{-o-transform: rotate(0deg);}
+}
+.h5-page-intro .h5-c-name-description{font-size: 14px;color: #fff;line-height: 18px;}
+.h5-c-name-back{animation: mfloat 1.5s infinite 2s;-webkit-animation: mfloat 1.5s infinite 2s;}
+@keyframes mfloat{
+	50%{top:8%;}
+}
+@-webkit-keyframes mfloat{
+	50%{top:8%;}
+}
+@-moz-keyframes mfloat{
+	50%{top:8%;}
+}
+@-o-keyframes mfloat{
+	50%{top:8%;}
+}
+.h5-c-type-point .rate{display: none;}
+
+
+/*H5ComponentBase区域*/
+.h5-component{background-size: 100% 100%;background-repeat: no-repeat;position: absolute;}
+
+
+/*H5ComponentPoint区域*/
+.point{border-radius: 50%;position: absolute;opacity: 0;color: #fff;-webkit-transform: scale(0.1);-ms-transform: scale(0.1);-o-transform: scale(0.1);transform: scale(0.1);}
+.h5-c-type-point .name{height: 30px;width: 100%;text-align: center;position: absolute;top: 50%;margin-top: -15px;font-size: 22px;opacity: 1;}
+.h5-c-type-point .rate{font-size: 0.5em;}
+.h5-c-point-load .point{opacity: 1;-webkit-transform: scale(1);-ms-transform: scale(1);-o-transform: scale(1);transform: scale(1);}
+.h5-c-point-leave .point{opacity: 0;-webkit-transform: scale(0.1);-ms-transform: scale(0.1);-o-transform: scale(0.1);transform: scale(0.1);}		
+.h5-c-point-load .point_focus:after{content:' ';position: absolute;height: 100%;width: 100%;border-radius: 50%;left:50%;top:50%;margin-left: -50%;margin-top: -50%;background-color: inherit;z-index: -1;animation:breathe 2s infinite 1.5s;-webkit-animation:breathe 2s infinite 1.5s;
+}
+@keyframes breathe{
+    0% {-ms-transform: scale(0.5);transform: scale(0.5);opacity:0.9;}
+    95%{-ms-transform: scale(1.5);transform: scale(1.5);opacity:0;}
+    100%{-ms-transform: scale(0.9);transform: scale(0.9);opacity:0;}
+}
+@-webkit-keyframes breathe{
+    0% {-webkit-transform: scale(0.5);opacity:0.9;}
+    95%{-webkit-transform: scale(1.5);opacity:0;}
+    100%{-webkit-transform: scale(0.9);opacity:0;}
+}
+@-moz-keyframes breathe{
+    0% {transform: scale(0.5);opacity:0.9;}
+    95%{transform: scale(1.5);opacity:0;}
+    100%{transform: scale(0.9);opacity:0;}
+}
+@-o-keyframes breathe{
+    0% {-o-transform: scale(0.5);opacity:0.9;}
+    95%{-o-transform: scale(1.5);opacity:0;}
+    100%{-o-transform: scale(0.9);opacity:0;}
+}
+
+
+/*H5ComponentBar区域*/
+.h5-c-type-bar .item-bar{zoom:1;height: 15px;font-size: 12px;line-height: 15px;margin-bottom: 20px;}
+.h5-c-type-bar .item-bar:after,.h5-c-type-bar .item-bar:before{content: '';display:table;clear: both;}
+.h5-c-type-bar .name{float: left;width: 70px;}
+.h5-c-type-bar .rate{height: 15px;float: left;position: relative;margin-left: 5px;}
+.h5-c-type-bar .rate .bg{width: 0%;height: 100%;background-color: green;position: absolute;left: 0;top: 0;border-radius: 3px; }
+.h5-c-type-bar .per{float: left;margin-left: 5px;opacity: 0;}
+.h5-c-bar-load .rate .bg{-webkit-transition: all 1s 0.4s;-o-transition: all 1s 0.4s;transition: all 1s 0.4s;width: 100%;}
+.h5-c-bar-leave .rate .bg{width: 0%;}
+.h5-c-bar-load .per{-webkit-transition: all 1s 1.2s;-o-transition: all 1s 1.2s;transition: all 1s 1.2s;opacity: 1;}
+.h5-c-bar-leave .per{opacity: 0;}
+
+
+/*H5ComponentPolyline区域*/
+.h5-c-type-polyline canvas{position: absolute;left: 0;top: 0;width: 100%;height: 100%;}
+.h5-c-type-polyline .text{position: absolute;font-size: 16px;text-align: center;height: 20px;line-height: 20px;bottom: -20px;color: #333;opacity: 0;-webkit-transition: all 0.5s 1.5s;-o-transition: all 0.5s 1.5s;transition: all 0.5s 1.5s;}
+.h5-c-polyline-load .text{opacity: 1;}
+.h5-c-polyline-leave .text{opacity: 0;}
+
+
+/*H5ConponentRadar区域*/
+.h5-c-type-radar canvas{position: absolute;left: 0;top: 0;width: 100%;height: 100%;}
+.h5-c-type-radar .text{position: absolute;font-size: 12px;opacity: 0;-webkit-transition: all 0.5s 1.5s;-o-transition: all 0.5s 1.5s;transition: all 0.5s 1.5s;}
+.h5-c-radar-load .text{opacity: 1;}
+.h5-c-radar-leave .text{opacity: 0;}
+
+
+/*H5ConponentPie区域*/
+.h5-c-type-pie canvas{position: absolute;left: 0;top: 0;width: 100%;height: 100%;}
+.h5-c-type-pie .text{position: absolute;text-align: center;z-index: 9;height: 24px;-webkit-transition: all 0.5s;		-o-transition: all 0.5s;transition: all 0.5s;}
+
+
+/*H5ComponentRing区域*/
+.h5-c-type-ring .mask{width: 80%;height: 80%;background-color: #ddd;position: absolute;left: 10%;top:10%;z-index: 99;border-radius: 50%;}
+.h5-c-type-ring .text{width: 100%;text-align: center;top: 40%;}

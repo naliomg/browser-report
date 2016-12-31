@@ -1,0 +1,22 @@
+{
+  "name": "browser-report",
+  "description": "移动端浏览器使用报告",
+  "main": "index.js",
+  "authors": [
+    "Nali"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "jquery-ui": "^1.12.1",
+    "fullpage.js": "fullpage#^2.9.2"
+  }
+}

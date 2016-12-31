@@ -1,0 +1,28 @@
+{
+  "name": "browser-report",
+  "version": "1.0.0",
+  "description": "移动端浏览器使用报告",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nali",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-uglify": "^2.0.0"
+  },
+  "dependencies": {
+    "fullpage.js": "^2.9.2",
+    "jquery": "^3.1.1",
+    "jquery-ui": "^1.12.1"
+  }
+}
